@@ -1,0 +1,95 @@
+<!-- Halaman FAQ - faq.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertanyaan Umum - FAQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🎬 ToyStory+</div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="film.html">Film</a>
+      <a href="karakter.html">Karakter</a>
+      <a href="trailer.html">Trailer</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="faq.html" class="aktif">FAQ</a>
+      <a href="berlangganan.html">Berlangganan</a>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <main>
+    <h1 class="judul">Pertanyaan yang Sering Diajukan (FAQ)</h1>
+    <section class="faq">
+      <details>
+        <summary>Apa itu ToyStory+?</summary>
+        <p>ToyStory+ adalah situs bertema streaming yang menyajikan informasi dan multimedia tentang film Toy Story untuk keperluan edukasi.</p>
+      </details>
+
+      <details>
+        <summary>Apakah ini situs resmi Pixar atau Disney?</summary>
+        <p>Tidak. Ini adalah proyek tugas akhir mahasiswa dan tidak berafiliasi dengan Pixar atau Disney.</p>
+      </details>
+
+      <details>
+        <summary>Apakah saya bisa menonton film Toy Story secara lengkap di sini?</summary>
+        <p>Tidak. Hanya trailer dan informasi yang tersedia di situs ini, bukan film penuh.</p>
+      </details>
+
+      <details>
+        <summary>Bagaimana cara menghubungi pengelola situs?</summary>
+        <p>Silakan gunakan formulir pada halaman <a href="kontak.html">Kontak</a>.</p>
+      </details>
+
+      <details>
+        <summary>Bagaimana cara mendukung situs ini?</summary>
+        <p>Yuk dukung kami dengan cara <a href="berlangganan.html">berlangganan</a> agar kami bisa terus menyajikan konten menarik!</p>
+      </details>
+
+      <h2>Rekomendasi Film Lain yang Bisa Dibahas</h2>
+<div class="film-grid">
+  <div class="film-card" onclick="tampilkanDeskripsi('insideout')">
+    <img src="folder img/inside.jpeg" alt="Inside Out">
+    <p><strong>Inside Out</strong></p>
+  </div>
+  <div class="film-card" onclick="tampilkanDeskripsi('coco')">
+    <img src="folder img/Coco.jpeg" alt="Coco">
+    <p><strong>Coco</strong></p>
+  </div>
+  <div class="film-card" onclick="tampilkanDeskripsi('nemo')">
+    <img src="folder img/Finding Nemo.jpeg" alt="Finding Nemo">
+    <p><strong>Finding Nemo</strong></p>
+  </div>
+  <div class="film-card" onclick="tampilkanDeskripsi('luca')">
+    <img src="folder img/Luca.jpeg" alt="Luca">
+    <p><strong>Luca</strong></p>
+  </div>
+  <div class="film-card" onclick="tampilkanDeskripsi('hotel')">
+    <img src="folder img/hotel.jpeg" alt="Hotel Transylvania">
+    <p><strong>Hotel Transylvania</strong></p>
+  </div>
+</div>
+
+<div id="deskripsiFilm" class="deskripsi-box"></div>
+
+
+  </div>
+
+  <div id="deskripsiFilm" class="film-deskripsi"></div>
+</details>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ToyStory+| Dibuat dengan penuh cinta</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

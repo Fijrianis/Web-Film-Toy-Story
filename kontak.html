@@ -1,0 +1,54 @@
+<!-- Halaman Kontak - kontak.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🎬 ToyStory+</div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="film.html">Film</a>
+      <a href="karakter.html">Karakter</a>
+      <a href="trailer.html">Trailer</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html" class="aktif">Kontak</a>
+      <a href="faq.html">FAQ</a>
+      <a href="berlangganan.html">Berlangganan</a>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <main>
+    <h1 class="judul">Hubungi Kami</h1>
+    <section>
+      <h2>Kirim Pesan untuk Kami</h2>
+      <p>
+        Kami senang mendengar masukan, pertanyaan, atau saran dari Anda. Silakan isi formulir di bawah ini dan tim kami akan menghubungi Anda secepatnya.
+      </p>
+
+      <form onsubmit="validateForm(event)">
+        <label for="nama">Nama:</label><br />
+        <input type="text" id="nama" name="nama" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="pesan">Pesan:</label><br />
+        <textarea id="pesan" name="pesan" rows="5" required></textarea><br />
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 ToyStory+| Dibuat dengan penuh cinta</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
